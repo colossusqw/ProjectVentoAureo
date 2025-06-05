@@ -6,7 +6,9 @@ public class RythimManager : MonoBehaviour
     public TMP_Text textPoints;
 
     public RythimButton ButtonA;
-    public RythimButton ButtonB;
+
+    public GameObject Target;
+    public GameObject Track;
 
     public bool playing = false;
     public float targetvel = 5f;
@@ -32,20 +34,13 @@ public class RythimManager : MonoBehaviour
     {
         playing = true;
 
-        InvokeRepeating("LaunchMusicNotes", 0f, 0.3f);
+        InvokeRepeating("LaunchMusicNotes", 0f, 0.6f);
     }
 
     void LaunchMusicNotes()
     {
         bool randomChoice = Random.value < 0.5f;
         
-        if (randomChoice)
-        {
-            if (!ButtonA.targetActive) ButtonA.targetActive = true;
-        }
-        else
-        {
-            if (!ButtonB.targetActive) ButtonB.targetActive = true;
-        }
+        Instantiate(Target, Track.transform.position + new Vector3(12f, 0f, 0f), Quaternion.identity, Track.transform);
     }
 }
