@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4238859053793858040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4350270438383668961}
+  - component: {fileID: 2112539059136423511}
+  m_Layer: 0
+  m_Name: FeedbackHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4350270438383668961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238859053793858040}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2112539059136423511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238859053793858040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef142899bd4b9249b7859f35495977c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterRenderer: {fileID: 0}
+  characterTransform: {fileID: 0}
+  characterTextures:
+  - {fileID: 2800000, guid: 4b0c910b9b662b448b8ac3e642a9765d, type: 3}
+  - {fileID: 2800000, guid: 67d845df4d5145c4589f01b9705a2fc2, type: 3}
+  - {fileID: 2800000, guid: 594d26b453dd03049a4e24807ad0250a, type: 3}
+  - {fileID: 2800000, guid: 9b1d45affa8a3784981b259c3631b749, type: 3}
+  feedbackImageUI: {fileID: 0}
+  feedbackTransform: {fileID: 0}
+  feedbackSprites:
+  - {fileID: 21300000, guid: dc6697e737862bf4ba97216d2544e298, type: 3}
+  - {fileID: 21300000, guid: 98f7768e58b8f5c45bc95569c87e1fb0, type: 3}
+  - {fileID: 21300000, guid: 1059ba8f1a5c47044bb580defd7f9aac, type: 3}
+  - {fileID: 21300000, guid: b31e2503e826a7b4390171529b4bc122, type: 3}
+  feedbackFadeDuration: 1
+  scaleMultipliers:
+  - 1.05
+  - 1.1
+  - 1.15
+  - 1.25
