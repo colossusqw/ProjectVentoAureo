@@ -404,7 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeScreen: {fileID: 2054698113}
   currentScene: 
-  sceneToChange: 
+  sceneToChange: Level
   Fade: 0
 --- !u!1 &1877598511
 GameObject:
