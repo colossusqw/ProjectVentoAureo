@@ -6,7 +6,7 @@ public class RulesMenu : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            GameManager.GM.ChangeScene("Level");
+            GameManager.GM.ChangeScene("TestScene");
         }
     }
 }

@@ -28,27 +28,6 @@ public class PerformanceFeedbackController : MonoBehaviour
 
     private Coroutine feedbackCoroutine;
 
-    //Teste!
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            ShowFeedback(JudgementType.Schifoso);
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            ShowFeedback(JudgementType.Bene);
-        }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            ShowFeedback(JudgementType.Grande);
-        }
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            ShowFeedback(JudgementType.Eccellente);
-        }
-    }
-
     private void Start()
     {
         if (characterTransform != null)
