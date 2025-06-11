@@ -5,31 +5,90 @@ public class TargetControl : MonoBehaviour
     public bool needsA = false;
     public bool needsB = false;
 
+    public bool Destroyed = false;
+
+    private int index = 0;
+    private int subIndex = 0;
+
     private Rigidbody rb;
     private RythimManager rc;
+    private Material mat;
     private PerformanceFeedbackController Client;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
+        mat= this.gameObject.GetComponent<MeshRenderer>().material;
         rc = this.gameObject.GetComponentInParent<RythimManager>();
         Client = FindObjectOfType<PerformanceFeedbackController>();
+
+        index = rc.currentIndex;
+        subIndex = rc.currentIndex;
+
+        SetupNeeds();
 
         rb.linearVelocity = transform.right * -rc.targetvel;
     }
 
     void Update()
     {
+        if(Destroyed) return;
         rb.linearVelocity = transform.right * -rc.targetvel;
-        if (transform.position.x < -12f) HandleRemoval();
+        if (transform.position.x < -12f) HandleRemoval(false, true);
     }
 
-    public void HandleRemoval()
+    public void SetupNeeds()
+    {
+        if(Destroyed) return;
+
+        if(rc.LevelList[index].type == 1)
+        {
+            mat.color = new Color(0f, 0f, 1f);
+            needsA = true;
+        }
+        if(rc.LevelList[index].type == 2)
+        {
+            mat.color = new Color(1f, 0f, 0f);
+            needsB = true;
+        }
+        if(rc.LevelList[index].type == 3)
+        {
+            mat.color = new Color(0.8f,0f,0.8f);
+            needsA = true;
+            needsB = true;
+        }
+
+        
+        if(rc.LevelList[index].reps > subIndex)
+        {
+            rc.subIndex++;
+        }
+        else
+        {
+            rc.subIndex = 0;
+            rc.currentIndex++;
+        }
+
+        if (!needsA && !needsB)
+        {
+            Destroyed = true;
+            Destroy(this.gameObject);
+        }
+    }
+
+    public void HandleRemoval(bool A = false, bool full = false)
     {
         float accuracy = Mathf.Abs(rb.transform.position.x + 6f);
 
-        if (accuracy < rc.GreatDist) 
+        if(Destroyed) return;
+
+        if((A && !needsA) || (!A && !needsB))
+        {
+            Client.ShowFeedback(JudgementType.Schifoso);
+            rc.points -= 3;
+        }
+        else if (accuracy < rc.GreatDist) 
         {
             Client.ShowFeedback(JudgementType.Eccellente);
             rc.points += 5;
@@ -55,8 +114,30 @@ public class TargetControl : MonoBehaviour
             rc.points -= 3;
         }
 
+        if (A && needsA) 
+        {
+            needsA = false;
+            mat.color = new Color(1f, 0f, 0f);
+        }
+        
+        if (!A && needsB)
+        {
+            needsB = false;
+            mat.color = new Color(0f, 0f, 1f);
+        }
+
         rc.UpdatePointText();
 
-        DestroyImmediate(this.gameObject);
+        if (full)
+        {
+            DestroyImmediate(this.gameObject);
+            Destroyed = true;
+        }
+        
+        if(!needsA && !needsB)
+        {
+            DestroyImmediate(this.gameObject);
+            Destroyed = true;
+        }
     }
 }
