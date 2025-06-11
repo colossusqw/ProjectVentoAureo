@@ -131,6 +131,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: rythim
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[1].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[2].reps
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[2].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[3].reps
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[3].type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[5].type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6553470334430897686, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

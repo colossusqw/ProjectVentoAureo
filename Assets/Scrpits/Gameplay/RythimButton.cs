@@ -33,7 +33,7 @@ public class RythimButton : MonoBehaviour
         {
             TargetControl Target = hit.transform.gameObject.GetComponent<TargetControl>();
 
-            Target.HandleRemoval();
+            Target.HandleRemoval(A);
         }
     }
 }
