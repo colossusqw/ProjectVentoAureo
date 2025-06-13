@@ -6,7 +6,7 @@ public class RulesMenu : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            GameManager.GM.ChangeScene("TestScene");
+            GameManager.GM.ChangeScene("Cutscene");
         }
     }
 }

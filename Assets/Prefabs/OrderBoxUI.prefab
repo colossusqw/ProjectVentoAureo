@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fbd70aa7d86b9184fb6e862282f9c05c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8afff13bb458df449adf9829c1890716, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5581369248437372520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c35613ae086cf9439a98e51911a2754, type: 3}
+  m_Script: {fileID: 11500000, guid: 65d7a2c105293c742b0af9ec5a46c7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   orderBoxGroup: {fileID: 3962904889126753521}
@@ -222,12 +222,12 @@ MonoBehaviour:
   - {fileID: 3019043690802719098}
   - {fileID: 1971436958029158964}
   orderImagesSprites:
-  - {fileID: 21300000, guid: a68e3b7c16c954e4ba1aa310741e6503, type: 3}
-  - {fileID: 21300000, guid: a68e3b7c16c954e4ba1aa310741e6503, type: 3}
-  - {fileID: 0}
-  fadeDuration: 0.5
-  scaleFactor: 1.15
-  scaleDuration: 0.25
+  - {fileID: 21300000, guid: 6132564f356237643b11469b07039611, type: 3}
+  - {fileID: 21300000, guid: 6132564f356237643b11469b07039611, type: 3}
+  - {fileID: 21300000, guid: 6132564f356237643b11469b07039611, type: 3}
+  fadeDuration: 0.2
+  scaleFactor: 1.125
+  scaleDuration: 0.05
 --- !u!1 &6536360383460865475
 GameObject:
   m_ObjectHideFlags: 0
