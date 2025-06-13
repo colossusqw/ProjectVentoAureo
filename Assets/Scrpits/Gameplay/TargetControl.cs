@@ -21,7 +21,7 @@ public class TargetControl : MonoBehaviour
         rb = this.gameObject.GetComponent<Rigidbody>();
         mat= this.gameObject.GetComponent<MeshRenderer>().material;
         rc = this.gameObject.GetComponentInParent<RythimManager>();
-        Client = FindObjectOfType<PerformanceFeedbackController>();
+        Client = FindFirstObjectByType<PerformanceFeedbackController>();
 
         index = rc.currentIndex;
         subIndex = rc.currentIndex;
