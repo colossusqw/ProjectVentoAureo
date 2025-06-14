@@ -48,12 +48,22 @@ public class RythimManager : MonoBehaviour
 
     void LaunchMusicNotes()
     {
-        if(currentIndex >= LevelLength) playing = false;
+        if(currentIndex >= LevelLength - 1) playing = false;
         if(!playing) return;
 
         bool randomChoice = Random.value < 0.5f;
-        
+
         Instantiate(Target, Track.transform.position + new Vector3(12f, 0f, 0f), Quaternion.identity, Track.transform);
+
+        if(LevelList[currentIndex].reps > subIndex)
+        {
+            subIndex++;
+        }
+        else
+        {
+            subIndex = 0;
+            currentIndex++;
+        }
     }
 }
 

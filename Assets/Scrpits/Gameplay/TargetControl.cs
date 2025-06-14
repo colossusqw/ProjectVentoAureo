@@ -26,6 +26,16 @@ public class TargetControl : MonoBehaviour
         index = rc.currentIndex;
         subIndex = rc.currentIndex;
 
+        if (index > rc.LevelLength) 
+        {
+            if (Destroyed) return;
+            Destroyed = true;
+            DestroyImmediate(this.gameObject);
+
+            rc.playing = false;
+            return;
+        }
+
         SetupNeeds();
 
         rb.linearVelocity = transform.right * -rc.targetvel;
@@ -59,19 +69,9 @@ public class TargetControl : MonoBehaviour
             needsB = true;
         }
 
-        
-        if(rc.LevelList[index].reps > subIndex)
-        {
-            rc.subIndex++;
-        }
-        else
-        {
-            rc.subIndex = 0;
-            rc.currentIndex++;
-        }
-
         if (!needsA && !needsB)
         {
+            if (Destroyed) return;
             Destroyed = true;
             Destroy(this.gameObject);
         }
@@ -130,14 +130,16 @@ public class TargetControl : MonoBehaviour
 
         if (full)
         {
-            DestroyImmediate(this.gameObject);
+            if (Destroyed) return;
             Destroyed = true;
+            DestroyImmediate(this.gameObject);
         }
         
         if(!needsA && !needsB)
         {
-            DestroyImmediate(this.gameObject);
+            if (Destroyed) return;
             Destroyed = true;
+            DestroyImmediate(this.gameObject);
         }
     }
 }
