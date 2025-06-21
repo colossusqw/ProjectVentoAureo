@@ -11,6 +11,8 @@ public class RythimManager : MonoBehaviour
     public GameObject Target;
     public GameObject Track;
 
+    [SerializeField] private AudioSource MainAudio;
+
     [SerializeField] public List<rythmUnit> LevelList;
 
     public int currentIndex = 0;
@@ -20,6 +22,7 @@ public class RythimManager : MonoBehaviour
     public bool playing = false;
     public float targetvel = 5f;
     public float rythim = 105f;
+    public float songOffset = 0f;
 
     public float GreatDist = 0.1f;
     public float GoodDist = 0.3f;
@@ -43,7 +46,13 @@ public class RythimManager : MonoBehaviour
     {
         playing = true;
 
-        InvokeRepeating("LaunchMusicNotes", 0f, 60f/rythim);
+        Invoke("PlaySong", songOffset + 1f);
+        InvokeRepeating("LaunchMusicNotes", 1f, 60f/rythim);
+    }
+
+    void PlaySong()
+    {
+        MainAudio.Play();
     }
 
     void LaunchMusicNotes()
