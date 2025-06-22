@@ -13,6 +13,7 @@ public class FullscreenImageFade : MonoBehaviour
     private void Start()
     {
         StartCoroutine(FadeSequence());
+        MusicManager.Instance.PlayMusic(MUSIC.CafeAmbienceTheme);
     }
 
     private IEnumerator FadeSequence()
@@ -40,6 +41,7 @@ public class FullscreenImageFade : MonoBehaviour
 
         if (objectToActivate != null)
         {
+            SFXManager.Instance.PlaySFX(SFX.CostumerEntering);
             objectToActivate.SetActive(true);
         }
     }

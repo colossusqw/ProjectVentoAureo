@@ -3,15 +3,21 @@ using UnityEngine;
 public enum MUSIC
 {
     MainMenuTheme,
+    CafeAmbienceTheme
 }
 
 public class MusicManager : MonoBehaviour
 {
     public static MusicManager Instance { get; private set; }
 
+    [Header("References")]
     [SerializeField] private AudioSource defaultAudioSource;
 
+    [Header("Musics Menu")]
     [SerializeField] private AudioClip mainMenuTheme;
+
+    [Header("Musics Cutscene")]
+    [SerializeField] private AudioClip cafeAmbienceTheme;
 
     private void Awake()
     {
@@ -39,7 +45,7 @@ public class MusicManager : MonoBehaviour
         {
             finalSource.Stop();
             finalSource.loop = true;
-            finalSource.clip = mainMenuTheme;
+            finalSource.clip = clip;
             finalSource.Play();
         }
     }
@@ -65,6 +71,7 @@ public class MusicManager : MonoBehaviour
         return music switch
         {
             MUSIC.MainMenuTheme => mainMenuTheme,
+            MUSIC.CafeAmbienceTheme => cafeAmbienceTheme,
             _ => null,
         };
     }
