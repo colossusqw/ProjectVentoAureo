@@ -20,6 +20,8 @@ public class ButtonsList : MonoBehaviour
 
     private void Start()
     {
+        MusicManager.Instance.PlayMusic(MUSIC.MainMenuTheme);
+
         volumeSlider.value = PlayerPrefs.GetFloat("volume", 0.8f);
         volumeSlider.onValueChanged.AddListener(SetVolume);
 
@@ -42,6 +44,7 @@ public class ButtonsList : MonoBehaviour
     public void StartGame()
     {
         SFXManager.Instance.PlaySFX(SFX.MenuStartGame);
+        MusicManager.Instance.StopMusic();
         StartCoroutine(StartGameAndFadeInOutAnimation());
     }
 
