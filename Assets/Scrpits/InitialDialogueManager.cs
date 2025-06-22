@@ -28,6 +28,7 @@ public class InitialDialogueManager : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(nextSceneName))
         {
+            MusicManager.Instance.StopMusic();
             GameManager.GM.ChangeScene(nextSceneName);
         }
         else
