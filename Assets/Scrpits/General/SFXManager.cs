@@ -35,7 +35,7 @@ public class SFXManager : MonoBehaviour
     [Header("SFXs Cutscenes")]
     [SerializeField] private AudioClip costumerEntering;
 
-    [Header("Gameplay")]
+    [Header("SFXs Gameplay")]
     [SerializeField] private AudioClip hitSchifoso;
     [SerializeField] private AudioClip hitBene;
     [SerializeField] private AudioClip hitGrande;
