@@ -41,7 +41,18 @@ public class ButtonsList : MonoBehaviour
 
     public void StartGame()
     {
+        SFXManager.Instance.PlaySFX(SFX.MenuStartGame);
         StartCoroutine(StartGameAndFadeInOutAnimation());
+    }
+
+    public void ButtonSelectedSFX()
+    {
+        SFXManager.Instance.PlaySFX(SFX.MenuOptionSelected);
+    }
+
+    public void ButtonReturn()
+    {
+        SFXManager.Instance.PlaySFX(SFX.MenuReturn);
     }
 
     public void SetVolume(float volume)

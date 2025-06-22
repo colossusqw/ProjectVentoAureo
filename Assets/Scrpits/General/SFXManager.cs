@@ -3,6 +3,9 @@ using UnityEngine;
 public enum SFX
 {
     MenuButtonHover,
+    MenuStartGame,
+    MenuOptionSelected,
+    MenuReturn,
 }
 
 
@@ -13,6 +16,9 @@ public class SFXManager : MonoBehaviour
     [SerializeField] private AudioSource defaultAudioSource;
 
     [SerializeField] private AudioClip menuButtonHover;
+    [SerializeField] private AudioClip menuStartGame;
+    [SerializeField] private AudioClip menuOptionSelected;
+    [SerializeField] private AudioClip menuReturn;
 
     private void Awake()
     {
@@ -47,6 +53,9 @@ public class SFXManager : MonoBehaviour
         return sfx switch
         {
             SFX.MenuButtonHover => menuButtonHover,
+            SFX.MenuStartGame => menuStartGame,
+            SFX.MenuOptionSelected => menuOptionSelected,
+            SFX.MenuReturn => menuReturn,
             _ => null,
         };
     }
