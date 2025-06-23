@@ -9,19 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be1941dbe800981408b2bfa283b496a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bd4e63e7544a7c448d9ac34df5d2bc8, type: 3}
   m_Name: DialogDataTest
   m_EditorClassIdentifier: 
   entries:
-  - text: Boa tarde!
+  - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     characterExpression: {fileID: 2800000, guid: 67d845df4d5145c4589f01b9705a2fc2, type: 3}
-  - text: "Poderia me prover um caf\xE9 expresso?"
-    characterExpression: {fileID: 2800000, guid: 12233169ee7f2044382cae3399d1c675, type: 3}
-  - text: "Mas eu n\xE3o quero qualquer tipo de caf\xE9! Eu quero um feito com Hawaiian
-      Kona"
-    characterExpression: {fileID: 2800000, guid: 4b0c910b9b662b448b8ac3e642a9765d, type: 3}
-  - text: "Tambem chamado de \"coffea arabica\", \xE9 cultivado nas encostas de Hualalai
-      e Mauna Loa , nos distritos de Kona Norte e Sul , na Ilha Grande do Hava\xED"
+  - text: Nunc odio purus, pulvinar non libero vel, tincidunt suscipit elit
     characterExpression: {fileID: 2800000, guid: 594d26b453dd03049a4e24807ad0250a, type: 3}
-  - text: Ficarei no aguardo
+  - text: In sagittis commodo efficitur. Quisque facilisis sollicitudin odio sit
+      amet semper.
+    characterExpression: {fileID: 2800000, guid: 4b0c910b9b662b448b8ac3e642a9765d, type: 3}
+  - text: Maecenas id lectus varius, vestibulum sem eget, malesuada ligula.
     characterExpression: {fileID: 2800000, guid: 9b1d45affa8a3784981b259c3631b749, type: 3}

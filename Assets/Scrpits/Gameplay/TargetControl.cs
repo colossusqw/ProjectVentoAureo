@@ -21,7 +21,7 @@ public class TargetControl : MonoBehaviour
         rb = this.gameObject.GetComponent<Rigidbody>();
         mat= this.gameObject.GetComponent<MeshRenderer>().material;
         rc = this.gameObject.GetComponentInParent<RythimManager>();
-        Client = FindObjectOfType<PerformanceFeedbackController>();
+        Client = FindFirstObjectByType<PerformanceFeedbackController>();
 
         index = rc.currentIndex;
         subIndex = rc.currentIndex;
@@ -85,31 +85,37 @@ public class TargetControl : MonoBehaviour
 
         if((A && !needsA) || (!A && !needsB))
         {
+            SFXManager.Instance.PlaySFX(SFX.HitSchifoso);
             Client.ShowFeedback(JudgementType.Schifoso);
             rc.points -= 3;
         }
         else if (accuracy < rc.GreatDist) 
         {
+            SFXManager.Instance.PlaySFX(SFX.HitEccellente);
             Client.ShowFeedback(JudgementType.Eccellente);
             rc.points += 5;
         }
         else if (accuracy < rc.GoodDist)
         {
+            SFXManager.Instance.PlaySFX(SFX.HitGrande);
             Client.ShowFeedback(JudgementType.Grande);
             rc.points += 3;
         }
         else if (accuracy < rc.OkDist)
         {
+            SFXManager.Instance.PlaySFX(SFX.HitBene);
             Client.ShowFeedback(JudgementType.Bene);
             rc.points += 1;
         }
         else if (accuracy < rc.BadDist)
         {
+            SFXManager.Instance.PlaySFX(SFX.HitSchifoso);
             Client.ShowFeedback(JudgementType.Schifoso);
             rc.points += 0;
         }
         else 
         {
+            SFXManager.Instance.PlaySFX(SFX.HitSchifoso);
             Client.ShowFeedback(JudgementType.Schifoso);
             rc.points -= 3;
         }

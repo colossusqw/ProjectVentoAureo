@@ -25,13 +25,22 @@ public class DialogBoxSystem : MonoBehaviour
     private void Start()
     {
         defaultScale = dialogBoxArt.rectTransform.localScale;
-        characterMaterial = character.GetComponent<Renderer>().material;
         dialogBoxGroup.alpha = 0f;
         dialogBoxGroup.gameObject.SetActive(false);
     }
 
+    void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            OnAdvancePressed();
+        }
+    }
+
     public void StartDialog(DialogData data, System.Action onDialogEnd = null)
     {
+        characterMaterial = character.GetComponent<Renderer>().material;
+
         dialogBoxGroup.gameObject.SetActive(true);
 
         currentIndex = -1;

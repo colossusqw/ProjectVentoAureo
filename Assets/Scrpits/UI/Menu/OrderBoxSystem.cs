@@ -25,6 +25,14 @@ public class OrderBoxSystem : MonoBehaviour
         orderBoxGroup.gameObject.SetActive(false);
     }
 
+    void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            EndOrderBox();
+        }
+    }
+
     public void StartOrderBox(System.Action onOrderEnd = null)
     {
         orderBoxGroup.gameObject.SetActive(true);

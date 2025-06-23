@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 900, y: 125}
+  m_AnchoredPosition: {x: 50, y: 17}
+  m_SizeDelta: {x: 460, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6257742944862342691
 CanvasRenderer:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4116942303039235530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 392a7c73160bd234eb8dc5d31f6a3ba4, type: 3}
+  m_Script: {fileID: 11500000, guid: 64169f8e739d3574fad7ddd0a8648da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBoxGroup: {fileID: 6919046206995679970}
@@ -206,7 +206,7 @@ MonoBehaviour:
   fadeDuration: 0.2
   scaleFactor: 1.125
   scaleDuration: 0.05
-  dialogData: {fileID: 11400000, guid: 3bfcc6edee7e0d84e97dbe8c15e0ac0d, type: 2}
+  dialogData: {fileID: 0}
 --- !u!1 &7822770146447781290
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +234,7 @@ RectTransform:
   m_GameObject: {fileID: 7822770146447781290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6825345432861089898}
@@ -242,7 +242,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1223, y: 344}
+  m_SizeDelta: {x: 880, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8583999032206835536
 CanvasRenderer:
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fbd70aa7d86b9184fb6e862282f9c05c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 21c19c7928682c946916cad7c6629849, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
