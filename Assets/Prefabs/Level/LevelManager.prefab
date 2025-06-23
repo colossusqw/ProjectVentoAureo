@@ -50,8 +50,97 @@ MonoBehaviour:
   ButtonA: {fileID: 8913378914611419683}
   Target: {fileID: 8011086437177194136, guid: 3f101432d64152f4c884f566d728347a, type: 3}
   Track: {fileID: 3642146079904473089}
+  MainAudio: {fileID: 0}
+  LevelList:
+  - type: 0
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 0
+    reps: 2
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 0
+    reps: 2
+  - type: 2
+    reps: 3
+  - type: 0
+    reps: 2
+  - type: 3
+    reps: 2
+  - type: 1
+    reps: 2
+  - type: 0
+    reps: 3
+  - type: 3
+    reps: 4
+  - type: 2
+    reps: 9
+  - type: 0
+    reps: 10
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 0
+    reps: 4
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 0
+    reps: 3
+  - type: 1
+    reps: 2
+  - type: 2
+    reps: 2
+  - type: 0
+    reps: 4
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 4
+  - type: 1
+    reps: 1
+  - type: 2
+    reps: 1
+  - type: 1
+    reps: 1
+  - type: 2
+    reps: 1
+  - type: 3
+    reps: 3
+  - type: 0
+    reps: 1
+  - type: 2
+    reps: 0
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 4
+  - type: 1
+    reps: 3
+  currentIndex: 0
+  subIndex: 0
+  LevelLength: 0
   playing: 0
   targetvel: 7
+  rythim: 105
+  songOffset: 0
   GreatDist: 0.3
   GoodDist: 0.6
   OkDist: 1.2
