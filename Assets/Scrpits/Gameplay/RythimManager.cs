@@ -46,8 +46,8 @@ public class RythimManager : MonoBehaviour
     {
         playing = true;
 
-        Invoke("PlaySong", songOffset + 1f);
-        InvokeRepeating("LaunchMusicNotes", 1f, 60f/rythim);
+        Invoke("PlaySong", 0f);
+        InvokeRepeating("LaunchMusicNotes", songOffset, 60f/rythim);
     }
 
     void PlaySong()
