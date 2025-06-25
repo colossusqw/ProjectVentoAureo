@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public string sceneToChange = "";
 
     public bool Fade = false;
+    public int points = 0;
 
     void Awake()
     {

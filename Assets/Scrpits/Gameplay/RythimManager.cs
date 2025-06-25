@@ -31,6 +31,9 @@ public class RythimManager : MonoBehaviour
 
     public int points = 0;
 
+    public string resultsScene;
+    private bool isChangingScene = false;
+
     void Awake()
     {
         LevelLength = LevelList.Count;
@@ -42,12 +45,12 @@ public class RythimManager : MonoBehaviour
         textPoints.text = "Score: " + points.ToString();
     }
 
-    void StartRound() 
+    void StartRound()
     {
         playing = true;
 
         Invoke("PlaySong", 0f);
-        InvokeRepeating("LaunchMusicNotes", songOffset, 60f/rythim);
+        InvokeRepeating("LaunchMusicNotes", songOffset, 60f / rythim);
     }
 
     void PlaySong()
@@ -57,14 +60,18 @@ public class RythimManager : MonoBehaviour
 
     void LaunchMusicNotes()
     {
-        if(currentIndex >= LevelLength - 1) playing = false;
-        if(!playing) return;
+        if (currentIndex >= LevelLength - 1)
+        {
+            playing = false;
+            Invoke("ChangingScene", 6f);
+        } 
+        if (!playing) return;
 
         bool randomChoice = Random.value < 0.5f;
 
         Instantiate(Target, Track.transform.position + new Vector3(12f, 0f, 0f), Quaternion.identity, Track.transform);
 
-        if(LevelList[currentIndex].reps > subIndex)
+        if (LevelList[currentIndex].reps > subIndex)
         {
             subIndex++;
         }
@@ -74,7 +81,18 @@ public class RythimManager : MonoBehaviour
             currentIndex++;
         }
     }
+    void ChangingScene()
+    {
+            if (!playing && !isChangingScene)
+            {
+                isChangingScene = true;
+                GameManager.GM.points = points;
+                GameManager.GM.ChangeScene(resultsScene);
+            }
+    }
 }
+
+
 
 [System.Serializable] public struct rythmUnit
 {
