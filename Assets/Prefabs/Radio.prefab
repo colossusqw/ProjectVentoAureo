@@ -150,10 +150,10 @@ MonoBehaviour:
   menuOptionSelected: {fileID: 8300000, guid: 1051e1b06c2e28e4c8078dfb42e330f1, type: 3}
   menuReturn: {fileID: 8300000, guid: cdca637c42b12264190dd9bf8dd0ed36, type: 3}
   costumerEntering: {fileID: 8300000, guid: 6f323062481ed4343beb460e98e70c75, type: 3}
-  hitSchifoso: {fileID: 8300000, guid: 9c3c59983c7757e45861cfd9b1c4cbc1, type: 3}
-  hitBene: {fileID: 8300000, guid: 2042e84c046425c45a43796830cae1e5, type: 3}
-  hitGrande: {fileID: 8300000, guid: a3c9bf6b55b4f6c41ab201ec57d5985e, type: 3}
-  hitEccellente: {fileID: 8300000, guid: 121ba4e13051b6a498332a46de5969fc, type: 3}
+  hitSchifoso: {fileID: 0}
+  hitBene: {fileID: 0}
+  hitGrande: {fileID: 0}
+  hitEccellente: {fileID: 0}
 --- !u!82 &5976406775615916303
 AudioSource:
   m_ObjectHideFlags: 0
