@@ -247,6 +247,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1997457506}
     m_Modifications:
+    - target: {fileID: 2602675929925484098, guid: ddfeba3b17522514eb3c08cba9323839, type: 3}
+      propertyPath: 'orderImagesSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2602675929925484098, guid: ddfeba3b17522514eb3c08cba9323839, type: 3}
+      propertyPath: 'orderImagesSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2602675929925484098, guid: ddfeba3b17522514eb3c08cba9323839, type: 3}
+      propertyPath: 'orderImagesSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5581369248437372520, guid: ddfeba3b17522514eb3c08cba9323839, type: 3}
       propertyPath: m_Name
       value: OrderBoxUI
