@@ -69,7 +69,7 @@ public class RythimManager : MonoBehaviour
 
         bool randomChoice = Random.value < 0.5f;
 
-        Instantiate(Target, Track.transform.position + new Vector3(12f, 0f, 0f), Quaternion.identity, Track.transform);
+        Instantiate(Target, Track.transform.position + new Vector3(12f, 0f, 0f), Quaternion.Euler(270f, 0f, 0f), Track.transform);
 
         if (LevelList[currentIndex].reps > subIndex)
         {

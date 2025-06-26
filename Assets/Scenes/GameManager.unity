@@ -406,6 +406,7 @@ MonoBehaviour:
   currentScene: 
   sceneToChange: Level
   Fade: 0
+  points: 0
 --- !u!1 &1877598511
 GameObject:
   m_ObjectHideFlags: 0

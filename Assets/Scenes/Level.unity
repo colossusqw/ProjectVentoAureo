@@ -191,6 +191,10 @@ PrefabInstance:
       value: LevelManager
       objectReference: {fileID: 0}
     - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1656788741876924985, guid: 0836f3f4a69a4fa4f83ff3b238ae8176, type: 3}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
       propertyPath: rythim
       value: 155
       objectReference: {fileID: 0}
@@ -357,6 +361,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 752606360843452509, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
       insertIndex: -1
       addedObject: {fileID: 94034244}
+    - targetCorrespondingSourceObject: {fileID: 1657615523154665198, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 94034246}
   m_SourcePrefab: {fileID: 100100000, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
 --- !u!1 &94034243 stripped
 GameObject:
@@ -460,6 +467,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &94034245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1657615523154665198, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+  m_PrefabInstance: {fileID: 94034242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &94034246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94034245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0874ccf49b0467349a11813e53ca8b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &94034247 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1074801785936381861, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+  m_PrefabInstance: {fileID: 94034242}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94034245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &192189853 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1561891516135630579, guid: 0a19b32e9e3a6d14fa3038f22327176c, type: 3}
@@ -653,7 +688,7 @@ GameObject:
   - component: {fileID: 930782438}
   - component: {fileID: 930782437}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: TrackArt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -774,6 +809,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: playerScore
+      value: 
+      objectReference: {fileID: 94034247}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
       propertyPath: feedbackImageUI
       value: 
       objectReference: {fileID: 1171868375}
@@ -846,6 +885,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 605580169986401788, guid: 348ed85250b6b12408f4b6d49102b8be, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 1574302866205246870, guid: 348ed85250b6b12408f4b6d49102b8be, type: 3}
       propertyPath: m_Pivot.x
       value: 0

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -15,6 +16,7 @@ public class PerformanceFeedbackController : MonoBehaviour
     public Renderer characterRenderer;
     public Transform characterTransform;
     public List<Texture> characterTextures;
+    public TextMeshProUGUI playerScore;
 
 
     public Image feedbackImageUI;
@@ -60,6 +62,17 @@ public class PerformanceFeedbackController : MonoBehaviour
             if (feedbackCoroutine != null) StopCoroutine(feedbackCoroutine);
 
             feedbackCoroutine = StartCoroutine(FadeOutFeedback());
+
+            var allReactions = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);
+            foreach (var obj in allReactions)
+            {
+                if (obj is IFeedbackReactive reactive)
+                {
+                    reactive.ReactToFeedback(scale * 1.15f, feedbackFadeDuration * 0.5f);
+                }
+            }
+
+            playerScore.GetComponent<ScoreTextFeedback>().ReactToFeedback(scale, feedbackFadeDuration * 0.5f);
         }
     }
 
