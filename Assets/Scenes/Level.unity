@@ -195,17 +195,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1656788741876924985, guid: 0836f3f4a69a4fa4f83ff3b238ae8176, type: 3}
     - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
-      propertyPath: rythim
-      value: 155
-      objectReference: {fileID: 0}
-    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
       propertyPath: MainAudio
       value: 
       objectReference: {fileID: 94034244}
-    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
-      propertyPath: songOffset
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
       propertyPath: resultsScene
       value: ResultsScene

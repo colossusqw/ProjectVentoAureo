@@ -23,6 +23,7 @@ public class RythimManager : MonoBehaviour
     public float targetvel = 5f;
     public float rythim = 105f;
     public float songOffset = 0f;
+    public float songOffset2 = 0f;
 
     public float GreatDist = 0.1f;
     public float GoodDist = 0.3f;
@@ -37,7 +38,7 @@ public class RythimManager : MonoBehaviour
     void Awake()
     {
         LevelLength = LevelList.Count;
-        Invoke("StartRound", 6f);
+        Invoke("StartRound", 3f);
     }
 
     public void UpdatePointText()
@@ -49,8 +50,8 @@ public class RythimManager : MonoBehaviour
     {
         playing = true;
 
-        Invoke("PlaySong", 0f);
         InvokeRepeating("LaunchMusicNotes", songOffset, 60f / rythim);
+        Invoke("PlaySong", songOffset2);
     }
 
     void PlaySong()

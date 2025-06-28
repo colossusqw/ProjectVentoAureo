@@ -139,13 +139,15 @@ MonoBehaviour:
   LevelLength: 0
   playing: 0
   targetvel: 7
-  rythim: 105
-  songOffset: 0
+  rythim: 136
+  songOffset: 2
+  songOffset2: 4
   GreatDist: 0.3
   GoodDist: 0.6
   OkDist: 1.2
   BadDist: 1.6
   points: 0
+  resultsScene: 
 --- !u!1 &1657615523154665198
 GameObject:
   m_ObjectHideFlags: 0
