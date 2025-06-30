@@ -43,6 +43,7 @@ public class RythimManager : MonoBehaviour
 
     public void UpdatePointText()
     {
+        if (points < 0) points = 0;
         textPoints.text = "Score: " + points.ToString();
     }
 
