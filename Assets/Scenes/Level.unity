@@ -365,6 +365,26 @@ PrefabInstance:
       propertyPath: resultsScene
       value: ResultsScene
       objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[145].reps
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[146].reps
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[148].reps
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[149].reps
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737761277821801322, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+      propertyPath: LevelList.Array.data[150].reps
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2928094835414799595, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
       propertyPath: m_Enabled
       value: 0
