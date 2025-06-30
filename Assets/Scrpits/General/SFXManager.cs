@@ -10,6 +10,8 @@ public enum SFX
 
     //SFXs Cutscene
     CostumerEntering,
+    DialogBoxPop,
+    Results,
 
     //SFXs Gameplay
     HitSchifoso,
@@ -34,6 +36,8 @@ public class SFXManager : MonoBehaviour
 
     [Header("SFXs Cutscenes")]
     [SerializeField] private AudioClip costumerEntering;
+    [SerializeField] private AudioClip dialogBoxPop;
+    [SerializeField] private AudioClip results;
 
     [Header("SFXs Gameplay")]
     [SerializeField] private AudioClip hitSchifoso;
@@ -81,6 +85,8 @@ public class SFXManager : MonoBehaviour
 
             //SFXs Cutscene
             SFX.CostumerEntering => costumerEntering,
+            SFX.DialogBoxPop => dialogBoxPop,
+            SFX.Results => results,
 
             //SFXs Gameplay
             SFX.HitSchifoso => hitSchifoso,
