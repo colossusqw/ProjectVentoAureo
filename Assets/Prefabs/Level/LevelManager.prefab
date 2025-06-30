@@ -48,81 +48,187 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPoints: {fileID: 1074801785936381861}
   ButtonA: {fileID: 8913378914611419683}
-  Target: {fileID: 8011086437177194136, guid: 3f101432d64152f4c884f566d728347a, type: 3}
+  Target: {fileID: 1656788741876924985, guid: 0836f3f4a69a4fa4f83ff3b238ae8176, type: 3}
   Track: {fileID: 3642146079904473089}
   MainAudio: {fileID: 0}
   LevelList:
   - type: 0
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 0
-    reps: 2
-  - type: 1
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 0
-    reps: 2
-  - type: 2
-    reps: 3
-  - type: 0
-    reps: 2
-  - type: 3
-    reps: 2
-  - type: 1
-    reps: 2
-  - type: 0
-    reps: 3
-  - type: 3
-    reps: 4
-  - type: 2
-    reps: 9
-  - type: 0
-    reps: 10
-  - type: 1
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 0
     reps: 4
   - type: 1
-    reps: 3
-  - type: 2
-    reps: 3
+    reps: 0
   - type: 0
-    reps: 3
-  - type: 1
     reps: 2
   - type: 2
+    reps: 0
+  - type: 0
+    reps: 6
+  - type: 3
+    reps: 0
+  - type: 0
     reps: 2
+  - type: 1
+    reps: 0
   - type: 0
-    reps: 4
-  - type: 1
-    reps: 3
+    reps: 2
   - type: 2
-    reps: 3
-  - type: 3
-    reps: 4
-  - type: 1
-    reps: 1
-  - type: 2
-    reps: 1
-  - type: 1
-    reps: 1
-  - type: 2
-    reps: 1
-  - type: 3
-    reps: 3
+    reps: 0
   - type: 0
-    reps: 1
+    reps: 2
+  - type: 3
+    reps: 0
+  - type: 0
+    reps: 2
+  - type: 1
+    reps: 7
   - type: 2
+    reps: 0
+  - type: 1
+    reps: 5
+  - type: 3
     reps: 0
   - type: 1
     reps: 3
   - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 7
+  - type: 1
+    reps: 3
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
     reps: 3
   - type: 1
     reps: 3
@@ -130,24 +236,148 @@ MonoBehaviour:
     reps: 3
   - type: 1
     reps: 3
+  - type: 3
+    reps: 3
   - type: 2
-    reps: 4
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
   - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 1
+    reps: 3
+  - type: 2
+    reps: 3
+  - type: 3
+    reps: 0
+  - type: 0
+    reps: 1
+  - type: 1
+    reps: 3
+  - type: 3
+    reps: 3
+  - type: 0
     reps: 3
   currentIndex: 0
   subIndex: 0
   LevelLength: 0
   playing: 0
   targetvel: 7
-  rythim: 136
+  rythim: 135
   songOffset: 2
-  songOffset2: 4
-  GreatDist: 0.3
-  GoodDist: 0.6
+  songOffset2: 4.2
+  GreatDist: 0.4
+  GoodDist: 0.8
   OkDist: 1.2
-  BadDist: 1.6
+  BadDist: 1.3
   points: 0
-  resultsScene: 
+  resultsScene: ResultsScene
 --- !u!1 &1657615523154665198
 GameObject:
   m_ObjectHideFlags: 0
