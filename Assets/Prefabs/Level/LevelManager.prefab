@@ -157,57 +157,57 @@ MonoBehaviour:
   - type: 1
     reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
   - type: 3
     reps: 3
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
+    reps: 0
   - type: 3
     reps: 3
   - type: 1
@@ -217,131 +217,131 @@ MonoBehaviour:
   - type: 1
     reps: 0
   - type: 3
-    reps: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 1
+    reps: 0
+  - type: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
   - type: 1
     reps: 3
   - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
+    reps: 0
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
+  - type: 2
+    reps: 0
+  - type: 3
+    reps: 0
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
+    reps: 0
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
+    reps: 0
   - type: 2
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 1
-    reps: 3
-  - type: 3
-    reps: 3
-  - type: 2
-    reps: 3
-  - type: 3
-    reps: 3
+    reps: 0
   - type: 1
     reps: 3
   - type: 2
@@ -359,11 +359,11 @@ MonoBehaviour:
   - type: 0
     reps: 1
   - type: 1
-    reps: 3
+    reps: 0
   - type: 3
-    reps: 3
+    reps: 0
   - type: 0
-    reps: 3
+    reps: 0
   currentIndex: 0
   subIndex: 0
   LevelLength: 0
