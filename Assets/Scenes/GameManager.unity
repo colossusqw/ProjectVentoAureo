@@ -263,7 +263,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeScreen: {fileID: 2054698113}
   currentScene: 
-  sceneToChange: Level
+  sceneToChange: Menu
   Fade: 0
   points: 0
 --- !u!1 &1877598511

@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         GM = this;
-        ChangeScene("Menu");
+        ChangeScene(sceneToChange);
     }
 
     void Update()
@@ -42,12 +42,12 @@ public class GameManager : MonoBehaviour
 
         if (Fade && tempColor.a < 1f)
         {
-            tempColor.a = Mathf.Min(tempColor.a + 0.5f * Time.deltaTime, 1f);
+            tempColor.a = Mathf.Min(tempColor.a + 1f * Time.deltaTime, 1f);
             FadeScreen.color = tempColor;
         }
         else if (!Fade && tempColor.a > 0f)
         {
-            tempColor.a = Mathf.Max(tempColor.a - 0.5f * Time.deltaTime, 0f);
+            tempColor.a = Mathf.Max(tempColor.a - 1f * Time.deltaTime, 0f);
             FadeScreen.color = tempColor;
         }
     }
