@@ -93,7 +93,7 @@ public class TargetControl : MonoBehaviour, IFeedbackReactive
 
     public void HandleRemoval(bool A = false, bool full = false)
     {
-        float accuracy = Mathf.Abs(rb.transform.position.x + 6f);
+        float accuracy = Mathf.Abs(rb.transform.position.x + 6.5f);
 
         if (Destroyed) return;
 
