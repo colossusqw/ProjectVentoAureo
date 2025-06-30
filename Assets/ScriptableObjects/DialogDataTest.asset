@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: DialogDataTest
   m_EditorClassIdentifier: 
   entries:
-  - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    characterExpression: {fileID: 2800000, guid: 67d845df4d5145c4589f01b9705a2fc2, type: 3}
-  - text: Nunc odio purus, pulvinar non libero vel, tincidunt suscipit elit
+  - text: BuonGiorno!!
     characterExpression: {fileID: 2800000, guid: 594d26b453dd03049a4e24807ad0250a, type: 3}
-  - text: In sagittis commodo efficitur. Quisque facilisis sollicitudin odio sit
-      amet semper.
-    characterExpression: {fileID: 2800000, guid: 4b0c910b9b662b448b8ac3e642a9765d, type: 3}
-  - text: Maecenas id lectus varius, vestibulum sem eget, malesuada ligula.
+  - text: Nice music you got here!
+    characterExpression: {fileID: 2800000, guid: 53302879a61b653499b828faf1b83c73, type: 3}
+  - text: Hmm...
+    characterExpression: {fileID: 2800000, guid: 594d26b453dd03049a4e24807ad0250a, type: 3}
+  - text: I would like to order a espresso and one crostata!
     characterExpression: {fileID: 2800000, guid: 9b1d45affa8a3784981b259c3631b749, type: 3}
