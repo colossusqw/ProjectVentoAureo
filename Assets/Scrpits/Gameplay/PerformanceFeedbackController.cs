@@ -17,7 +17,7 @@ public class PerformanceFeedbackController : MonoBehaviour
     public Transform characterTransform;
     public List<Texture> characterTextures;
     public TextMeshProUGUI playerScore;
-
+    public LightControler FeedbackLight;
 
     public Image feedbackImageUI;
     public RectTransform feedbackTransform;
@@ -45,6 +45,7 @@ public class PerformanceFeedbackController : MonoBehaviour
 
         if (index >= 0 && index < characterTextures.Count)
         {
+            FeedbackLight.StartFeedback(index);
             characterRenderer.material.mainTexture = characterTextures[index];
         }
 
