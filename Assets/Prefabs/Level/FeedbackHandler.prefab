@@ -47,10 +47,11 @@ MonoBehaviour:
   characterRenderer: {fileID: 0}
   characterTransform: {fileID: 0}
   characterTextures:
-  - {fileID: 2800000, guid: 4b0c910b9b662b448b8ac3e642a9765d, type: 3}
+  - {fileID: 2800000, guid: 5a90f635789a1684cade6cfdd0cd9752, type: 3}
+  - {fileID: 2800000, guid: 697b7472e6ee33d41ba042341265b8da, type: 3}
   - {fileID: 2800000, guid: 67d845df4d5145c4589f01b9705a2fc2, type: 3}
-  - {fileID: 2800000, guid: 594d26b453dd03049a4e24807ad0250a, type: 3}
-  - {fileID: 2800000, guid: 9b1d45affa8a3784981b259c3631b749, type: 3}
+  - {fileID: 2800000, guid: 53302879a61b653499b828faf1b83c73, type: 3}
+  playerScore: {fileID: 0}
   feedbackImageUI: {fileID: 0}
   feedbackTransform: {fileID: 0}
   feedbackSprites:
