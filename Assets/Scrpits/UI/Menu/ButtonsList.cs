@@ -41,11 +41,17 @@ public class ButtonsList : MonoBehaviour
         #endif
     }
 
+    public void OpeningRulesMenu()
+    {
+        StartCoroutine(StartGameAndFadeInOutAnimation());
+    } 
+
     public void StartGame()
     {
         SFXManager.Instance.PlaySFX(SFX.MenuStartGame);
         MusicManager.Instance.StopMusic();
-        StartCoroutine(StartGameAndFadeInOutAnimation());
+
+        GameManager.GM.ChangeScene(StartGameScene);
     }
 
     public void ButtonSelectedSFX()
@@ -97,15 +103,30 @@ public class ButtonsList : MonoBehaviour
         while (t < fadeDuration)
         {
             t += Time.deltaTime;
-            rulesMenuGroup.alpha = Mathf.Lerp(1f, 0f, t*5f / fadeDuration);
 
-            float lightAlpha = Mathf.Lerp(0f, 1f, t / fadeDuration);
+            if (lightColor.a >= 1) t = fadeDuration;
+
+            float lightAlpha = Mathf.Lerp(lightUI.color.a, 1f, t / fadeDuration);
             lightColor.a = lightAlpha;
             lightUI.color = lightColor;
 
             yield return null;
         }
 
-        GameManager.GM.ChangeScene(StartGameScene);
+        t = 0;
+
+        Debug.Log(rulesMenuGroup.alpha);
+
+        while (t < fadeDuration)
+        {
+            t += Time.deltaTime * 2f;
+
+            rulesMenuGroup.alpha = Mathf.Lerp(0f, 1f, t / fadeDuration);
+            Debug.Log(rulesMenuGroup.alpha);
+
+            yield return null;
+        }
+
+        rulesMenuGroup.interactable = true;
     }
 }
