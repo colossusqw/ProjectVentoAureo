@@ -31,6 +31,8 @@ public class ResultScreen : MonoBehaviour
             characterImage.sprite = rankSprites[rankIndex];
 
         StartCoroutine(ShowContinueButton());
+
+        SFXManager.Instance.PlaySFX(SFX.Results);
     }
 
     int CalculateRank(int score)

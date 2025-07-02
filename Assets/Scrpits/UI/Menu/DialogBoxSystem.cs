@@ -74,6 +74,8 @@ public class DialogBoxSystem : MonoBehaviour
         dialogText.text = entry.text;
 
         if (entry.characterExpression != null) characterMaterial.mainTexture = entry.characterExpression;
+
+        SFXManager.Instance.PlaySFX(SFX.DialogBoxPop);
     }
 
     private IEnumerator ChangeDialog()

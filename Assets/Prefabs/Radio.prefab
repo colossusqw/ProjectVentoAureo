@@ -149,8 +149,10 @@ MonoBehaviour:
   menuStartGame: {fileID: 8300000, guid: 2b5e318592f0baa46bb0a02ef9d45bc2, type: 3}
   menuOptionSelected: {fileID: 8300000, guid: 1051e1b06c2e28e4c8078dfb42e330f1, type: 3}
   menuReturn: {fileID: 8300000, guid: cdca637c42b12264190dd9bf8dd0ed36, type: 3}
-  costumerEntering: {fileID: 8300000, guid: 6f323062481ed4343beb460e98e70c75, type: 3}
-  hitSchifoso: {fileID: 0}
+  costumerEntering: {fileID: 8300000, guid: 83e3fcf279acb4b46b8be4458896a677, type: 3}
+  dialogBoxPop: {fileID: 8300000, guid: c94fa0ccdb7161045889ed259cb24a3d, type: 3}
+  results: {fileID: 8300000, guid: 87515b83124d27345a49f80b92e31bd7, type: 3}
+  hitSchifoso: {fileID: 8300000, guid: 9c3c59983c7757e45861cfd9b1c4cbc1, type: 3}
   hitBene: {fileID: 0}
   hitGrande: {fileID: 0}
   hitEccellente: {fileID: 0}
