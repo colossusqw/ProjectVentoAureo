@@ -115,14 +115,11 @@ public class ButtonsList : MonoBehaviour
 
         t = 0;
 
-        Debug.Log(rulesMenuGroup.alpha);
-
         while (t < fadeDuration)
         {
             t += Time.deltaTime * 2f;
 
             rulesMenuGroup.alpha = Mathf.Lerp(0f, 1f, t / fadeDuration);
-            Debug.Log(rulesMenuGroup.alpha);
 
             yield return null;
         }

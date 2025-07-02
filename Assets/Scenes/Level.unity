@@ -389,28 +389,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7062232326529686468, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -250
-      objectReference: {fileID: 0}
-    - target: {fileID: 7062232326529686468, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 200
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
---- !u!114 &94034247 stripped
+--- !u!114 &94034243 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1074801785936381861, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1836009091101089189, guid: f9a8c5c938653e24abf8de1824f01e36, type: 3}
   m_PrefabInstance: {fileID: 94034242}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!23 &192189853 stripped
@@ -1357,7 +1349,7 @@ PrefabInstance:
     - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
       propertyPath: playerScore
       value: 
-      objectReference: {fileID: 94034247}
+      objectReference: {fileID: 94034243}
     - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
       propertyPath: FeedbackLight
       value: 
@@ -1378,6 +1370,22 @@ PrefabInstance:
       propertyPath: characterTransform
       value: 
       objectReference: {fileID: 192189856}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: 'feedbackSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -1245455617, guid: 72aa64e88ec19924dace9df2a454ed9c, type: 3}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: 'feedbackSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1865865546, guid: 72aa64e88ec19924dace9df2a454ed9c, type: 3}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: 'feedbackSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2121054149, guid: 72aa64e88ec19924dace9df2a454ed9c, type: 3}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: 'feedbackSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1998170908, guid: 72aa64e88ec19924dace9df2a454ed9c, type: 3}
     - target: {fileID: 4238859053793858040, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
       propertyPath: m_Name
       value: FeedbackHandler
@@ -1437,7 +1445,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 605580169986401788, guid: 348ed85250b6b12408f4b6d49102b8be, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 150
+      value: 280
       objectReference: {fileID: 0}
     - target: {fileID: 1574302866205246870, guid: 348ed85250b6b12408f4b6d49102b8be, type: 3}
       propertyPath: m_Pivot.x
@@ -1517,6 +1525,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1574302866205246870, guid: 348ed85250b6b12408f4b6d49102b8be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611620920918071227, guid: 348ed85250b6b12408f4b6d49102b8be, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7049691973347118924, guid: 348ed85250b6b12408f4b6d49102b8be, type: 3}
