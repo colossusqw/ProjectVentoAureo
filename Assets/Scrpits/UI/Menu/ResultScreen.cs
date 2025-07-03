@@ -13,7 +13,7 @@ public class ResultScreen : MonoBehaviour
     public List<Sprite> rankSprites;
     public Button continueButton;
 
-    [SerializeField] private int[] scoreThresholds = { 0, 300, 500, 700, 900, 1100};
+    [SerializeField] private int[] scoreThresholds = { 0, 300, 500, 675, 850, 1000};
     [SerializeField] private string[] rankLetters = { "F", "E", "D", "C", "B", "A" };
 
     void Start()
