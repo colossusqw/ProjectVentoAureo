@@ -3,7 +3,6 @@ using UnityEngine;
 public class InitialDialogueManager : MonoBehaviour
 {
     public GameObject dialogBoxSystem;
-    public GameObject orderBoxSystem;
     public DialogData initialDialogData;
     public string nextSceneName;
 
@@ -19,12 +18,6 @@ public class InitialDialogueManager : MonoBehaviour
     }
 
     private void OnDialogEnd()
-    {
-        orderBoxSystem.SetActive(true);
-        orderBoxSystem.GetComponent<OrderBoxSystem>().StartOrderBox(OnOrderEnd);
-    }
-
-    private void OnOrderEnd()
     {
         if (!string.IsNullOrEmpty(nextSceneName))
         {

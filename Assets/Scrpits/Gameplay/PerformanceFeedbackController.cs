@@ -16,7 +16,7 @@ public class PerformanceFeedbackController : MonoBehaviour
     public Renderer characterRenderer;
     public Transform characterTransform;
     public List<Texture> characterTextures;
-    public TextMeshProUGUI playerScore;
+    public Image playerScore;
     public LightControler FeedbackLight;
 
     public Image feedbackImageUI;
