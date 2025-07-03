@@ -609,6 +609,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5976406775615916303, guid: a89524ca9e004b341b9b9bb32d96cc7b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -5294434627865663656, guid: 8caf7119f3c14b94086e90f8bcc5a007, type: 2}
+    - target: {fileID: 6729247394628877037, guid: a89524ca9e004b341b9b9bb32d96cc7b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -1939076221822936277, guid: 8caf7119f3c14b94086e90f8bcc5a007, type: 2}
     - target: {fileID: 7289920940423127203, guid: a89524ca9e004b341b9b9bb32d96cc7b, type: 3}
       propertyPath: m_Name
       value: Radio
