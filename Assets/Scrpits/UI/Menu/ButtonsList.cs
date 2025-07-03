@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -9,7 +10,11 @@ public class ButtonsList : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject optionsMenu;
     [SerializeField] private GameObject RulesMenu;
-    [SerializeField] private Slider volumeSlider;
+
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider sfxSlider;
+    [SerializeField] private AudioMixer audioMixer;
+
     [SerializeField] private float fadeDuration;
     [SerializeField] private string StartGameScene;
     [SerializeField] private Image lightUI;
@@ -22,8 +27,14 @@ public class ButtonsList : MonoBehaviour
     {
         MusicManager.Instance.PlayMusic(MUSIC.MainMenuTheme);
 
-        volumeSlider.value = PlayerPrefs.GetFloat("volume", 0.8f);
-        volumeSlider.onValueChanged.AddListener(SetVolume);
+        musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0.8f);
+        sfxSlider.value   = PlayerPrefs.GetFloat("sfxVolume",   0.8f);
+
+        musicSlider.onValueChanged.AddListener(SetMusicVolume);
+        sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+
+        SetMusicVolume(musicSlider.value);
+        SetSFXVolume(sfxSlider.value);
 
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
@@ -64,11 +75,20 @@ public class ButtonsList : MonoBehaviour
         SFXManager.Instance.PlaySFX(SFX.MenuReturn);
     }
 
-    public void SetVolume(float volume)
+    public void SetMusicVolume(float sliderValue)
     {
-        PlayerPrefs.SetFloat("volume", volume);
+        audioMixer.SetFloat("MusicParameter", Mathf.Log10(Mathf.Max(sliderValue, 0.0001f)) * 20f);
+
+        PlayerPrefs.SetFloat("musicVolume", sliderValue);
         PlayerPrefs.Save();
-        AudioListener.volume = volume;
+    }
+
+    public void SetSFXVolume(float sliderValue)
+    {
+        audioMixer.SetFloat("SFXParameter", Mathf.Log10(Mathf.Max(sliderValue, 0.0001f)) * 20f);
+
+        PlayerPrefs.SetFloat("sfxVolume", sliderValue);
+        PlayerPrefs.Save();
     }
 
     private IEnumerator MainMenuFadeIn()
