@@ -2198,6 +2198,22 @@ PrefabInstance:
       propertyPath: 'feedbackSprites.Array.data[3]'
       value: 
       objectReference: {fileID: 1998170908, guid: 72aa64e88ec19924dace9df2a454ed9c, type: 3}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: 'scaleMultipliers.Array.data[0]'
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: 'scaleMultipliers.Array.data[1]'
+      value: 1.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: 'scaleMultipliers.Array.data[2]'
+      value: 1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112539059136423511, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
+      propertyPath: 'scaleMultipliers.Array.data[3]'
+      value: 1.08
+      objectReference: {fileID: 0}
     - target: {fileID: 4238859053793858040, guid: 8edd185e0b6a36c46a787ed149c99558, type: 3}
       propertyPath: m_Name
       value: FeedbackHandler
