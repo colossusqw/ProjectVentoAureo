@@ -32,10 +32,10 @@ public class ResultScreen : MonoBehaviour
 
         StartCoroutine(ShowContinueButton());
 
-        SFXManager.Instance.PlaySFX(SFX.Results);
+        Invoke("PlayTheResultsSFX", 2f);
     }
 
-    int CalculateRank(int score)
+    private int CalculateRank(int score)
     {
         for (int i = scoreThresholds.Length - 1; i >= 0; i--)
         {
@@ -43,6 +43,11 @@ public class ResultScreen : MonoBehaviour
                 return i;
         }
         return 0;
+    }
+
+    private void PlayTheResultsSFX()
+    {
+        SFXManager.Instance.PlaySFX(SFX.Results);
     }
 
     IEnumerator ShowContinueButton()
