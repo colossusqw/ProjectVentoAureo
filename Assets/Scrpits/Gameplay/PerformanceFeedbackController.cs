@@ -22,7 +22,7 @@ public class PerformanceFeedbackController : MonoBehaviour
     public Image feedbackImageUI;
     public RectTransform feedbackTransform;
     public List<Sprite> feedbackSprites;
-    public float feedbackFadeDuration = 1.0f;
+    public float feedbackDuration = 1.0f;
 
     public List<float> scaleMultipliers;
     private Vector3 originalCharacterScale;
@@ -69,11 +69,11 @@ public class PerformanceFeedbackController : MonoBehaviour
             {
                 if (obj is IFeedbackReactive reactive)
                 {
-                    reactive.ReactToFeedback(scale * 1.15f, feedbackFadeDuration * 0.5f);
+                    reactive.ReactToFeedback(scale * 1.15f, feedbackDuration * 0.5f);
                 }
             }
 
-            playerScore.GetComponent<ScoreTextFeedback>().ReactToFeedback(scale, feedbackFadeDuration * 0.5f);
+            playerScore.GetComponent<ScoreTextFeedback>().ReactToFeedback(scale, feedbackDuration * 0.5f);
         }
     }
 
@@ -82,10 +82,10 @@ public class PerformanceFeedbackController : MonoBehaviour
         float timer = 0f;
         Color originalColor = feedbackImageUI.color;
 
-        while (timer < feedbackFadeDuration)
+        while (timer < feedbackDuration)
         {
             timer += Time.deltaTime;
-            float t = timer / feedbackFadeDuration;
+            float t = timer / feedbackDuration;
 
             float alpha = Mathf.Lerp(1f, 0f, t);
             feedbackImageUI.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
