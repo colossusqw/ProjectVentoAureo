@@ -26,6 +26,15 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         HandleFade();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (currentScene != "Menu")
+            {
+                ChangeScene("Menu");
+            }
+            else LeaveGame();
+        }
     }
 
     public void OffFade()
